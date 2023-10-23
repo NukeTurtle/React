@@ -1,0 +1,24 @@
+{
+    "elements": [
+      {
+        "icon": "save",
+        "title": "Save"
+      },
+      {
+        "icon": "edit",
+        "title": "Edit"
+      },
+      {
+        "icon": "star",
+        "title": "Star"
+      },
+      {
+        "icon": "add",
+        "title": "Add"
+      },
+      {
+        "icon": "api",
+        "title": "Api"
+      }
+    ]
+  }
