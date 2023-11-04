@@ -2,27 +2,24 @@ import "./List.scss";
 import Data from "./data.json";
 import Icon from "@mui/material/Icon";
 
-export function ListItem(props) {
-    return <li><Icon>{Data.elements[4].icon}</Icon>{[props.animalList, props.icon]}</li>
-}
-
-export function List(props) {
-    return (
-        <ul>
-            {props.animalList.map(animal => {
-                return <ListItem key={animal} animalList={animal} />;
-            })}
-        </ul>
-    );
-};
-
+// first component to list multiple animals
 export default function AnimalList() {
-    const animals = ["Lion", "Cow", "Snake", "Lizard"];
-
+    // create array
+    const animals = ["Lion", "Zebra", "Snake", "Horse", "Pinguin"];
+    // change to render list animals from array instead from hardcoding
+    const listItem = animals.map((animal) => {
+        return (
+            // listItems(li)
+            animal.startsWith("") ? <li key={animal}><Icon>{Data.elements[0].icon}</Icon>{animal}</li> : null
+        )
+    })
+    // list(ul)
+    const list = <ul>{listItem}</ul>
     return (
+        // for animallist(div)
         <div id="List">
-            <h1>Animals: </h1>
-            <List animalList={animals} />
+            <h1>Animals :</h1>
+            {list}
         </div>
-    );
+    )
 }

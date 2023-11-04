@@ -1,8 +1,8 @@
 {
     "elements": [
       {
-        "icon": "save",
-        "title": "Save"
+        "icon": "pets",
+        "title": "Animals"
       },
       {
         "icon": "edit",
