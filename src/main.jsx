@@ -13,9 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelloWorld />
     <Greeting />
-    <Button />
-    <Card />
-    <Icon color='primary'>star</Icon>
+    <Button /> 
+   <Card />
+    <Icon color='secondary'>star</Icon>
     <Icon color='primary'>star</Icon>
     <Icon color='primary'>star</Icon>
     <Icon color='primary'>star</Icon>
